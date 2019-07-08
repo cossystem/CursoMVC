@@ -4,12 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using capaDatos;
-using CapaEntidad;
+using capaEntidad;
 using System.Data;
 
 namespace capaNegocio
 {
     public class NegEmpleados
     {
+        DatEmpleados objdato = new DatEmpleados();
+        public DataTable Listado()
+        {
+            return objdato.Listado();
+        }
+
     }
 }
