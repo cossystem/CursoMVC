@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,7 +45,12 @@
     <Compile Include="DatEmpleados.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\capaEntidad.csproj">
+      <Project>{a0f115ca-039a-4a9c-b450-341ba7b925d1}</Project>
+      <Name>capaEntidad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Documentacion\Notas del Proyecto Curso de MVC.docx" />
   </ItemGroup>
